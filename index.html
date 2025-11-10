@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PawMatch — Animal Dating, The Gentle Way</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span class="brand-name">PawMatch</span>
+      </a>
+
+      <button class="nav-cta" data-scrollto="#download">Get the App</button>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <h1>Find your pet’s next best friend.</h1>
+        <p>Gentle swipes. Thoughtful matches. Made for pets, loved by humans.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-scrollto="#try">Try a Demo</button>
+          <a href="#learn" class="btn btn-ghost">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Demo card area">
+        <div class="demo-card" id="demoCard" role="region" aria-live="polite">
+          <!-- Filled by JS with profile content -->
+        </div>
+        <div class="demo-actions" role="group" aria-label="Swipe actions">
+          <button class="action action-pass" id="btnPass" aria-label="Pass">✖</button>
+          <button class="action action-like" id="btnLike" aria-label="Like">♥</button>
+        </div>
+        <p class="hint">Tap ♥ or ✖ — or use ← / → keys</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="learn" class="features container">
+      <h2>Why PawMatch?</h2>
+      <div class="grid">
+        <article class="feature">
+          <div class="dot dot-mint"></div>
+          <h3>Gentle by design</h3>
+          <p>Minimal, calm flows keep stress low for humans and animals alike.</p>
+        </article>
+        <article class="feature">
+          <div class="dot dot-blush"></div>
+          <h3>Smart matches</h3>
+          <p>Temperament, activity level, and care needs guide every intro.</p>
+        </article>
+        <article class="feature">
+          <div class="dot dot-sky"></div>
+          <h3>Verified profiles</h3>
+          <p>Community-vetted profiles cut the fluff and keep things real.</p>
+        </article>
+        <article class="feature">
+          <div class="dot dot-lemon"></div>
+          <h3>Meetups that work</h3>
+          <p>Clear guidance for first playdates, from parks to living rooms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="try" class="gallery container">
+      <h2>Featured friends nearby</h2>
+      <div class="cards" id="cardList" aria-live="polite">
+        <!-- JS will render preview cards here too -->
+      </div>
+    </section>
+
+    <section id="download" class="cta container">
+      <div class="cta-card">
+        <h2>Ready to try it for real?</h2>
+        <p>Get early access to the PawMatch beta and help shape the future of pet meetups.</p>
+        <form class="cta-form" id="betaForm" aria-label="Beta signup form">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+          <button class="btn btn-primary" type="submit">Get Invite</button>
+        </form>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> PawMatch. Made with care for animals.</p>
+    <ul class="footer-links" aria-label="Footer">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
