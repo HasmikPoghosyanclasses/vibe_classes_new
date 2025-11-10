@@ -119,7 +119,7 @@ function handleForm(){
     e.preventDefault();
     const email = $("#email").value.trim();
     if(!email){
-      note.textContent = "Please enter your email.";
+      note.textContent = "Please enter your cool email.";
       return;
     }
     // Fake success state
